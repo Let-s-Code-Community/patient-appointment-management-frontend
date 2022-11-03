@@ -1,10 +1,16 @@
 import React from 'react';
+import Home from './pages/Home/Home';
+import { Routes, Route } from "react-router-dom";
+import Navbar from './components/shared/navbar/Navbar';
 
 const App = () => {
   return (
-    <div>
-      <p className='text-xl text-primary'>Hello world</p>
-    </div>
+    <>
+      <Navbar />
+      <Routes>
+        <Route path='/' element={<Home />} />
+      </Routes>
+    </>
   );
 };
 

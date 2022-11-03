@@ -1,0 +1,11 @@
+.header{
+    background:linear-gradient(180deg, rgba(60,72,88,.7) 100%, rgba(60,72,88,.7) 100%), url(https://shreethemes.in/doctris/layouts/assets/images/bg/01.jpg);
+    padding: 220px 30px;
+    align-self: center;
+    position: relative;
+    width: 100%;
+    background-position: center center;
+
+}
+
+
