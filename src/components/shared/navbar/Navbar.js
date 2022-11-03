@@ -1,8 +1,9 @@
 import React from 'react';
+import NavEnd from './NavEnd';
 
 const Navbar = () => {
     return (
-        <div className="navbar bg-base-100">
+        <div className="navbar bg-transparent text-white/[.7] fixed top-0 z-50 px-[10%]">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -41,9 +42,8 @@ const Navbar = () => {
                     <li><a>Item 3</a></li>
                 </ul>
             </div>
-            <div className="navbar-end">
-                <a className="btn">Get started</a>
-            </div>
+            {/* nav end */}
+            <NavEnd />
         </div>
     );
 };
