@@ -1,50 +1,182 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState } from 'react';
+import MobileNavLink from './MobileNavLink';
+import NavCenter from './NavCenter';
 import NavEnd from './NavEnd';
+import NavStart from './NavStart';
 
 const Navbar = () => {
+    const [nav, setNav] = useState(true);
+    const [openNav, setOpenNav] = useState(true)
+    // handle header bg by scrolling
+    const handleNavBg = () => {
+        if (window.scrollY > 80) {
+            setNav(false);
+        } else {
+            setNav(true);
+        }
+    };
+    window.addEventListener("scroll", handleNavBg);
+
+
+    const links = [
+        {
+            id: 1,
+            name: "Home",
+            link: "",
+        },
+        {
+            id: 2,
+            name: "Doctors",
+            link: "",
+            subLinks: [
+                {
+                    id: 1,
+                    name: "Dashboard",
+                    link: "#"
+                },
+                {
+                    id: 2,
+                    name: "Appointment",
+                    link: "#"
+                },
+                {
+                    id: 3,
+                    name: "Patients",
+                    link: "#"
+                },
+                {
+                    id: 4,
+                    name: "Schedule timing",
+                    link: "#"
+                },
+                {
+                    id: 5,
+                    name: "Invoices",
+                    link: "#"
+                },
+                {
+                    id: 6,
+                    name: "Reviews",
+                    link: "#"
+                },
+                {
+                    id: 7,
+                    name: "Message",
+                    link: "#"
+                },
+                {
+                    id: 8,
+                    name: "Profile",
+                    link: "#"
+                },
+                {
+                    id: 9,
+                    name: "Profile Settings",
+                    link: "#"
+                },
+                {
+                    id: 10,
+                    name: "Chat",
+                    link: "#"
+                },
+                {
+                    id: 11,
+                    name: "Login",
+                    link: "#"
+                },
+                {
+                    id: 12,
+                    name: "Sign Up",
+                    link: "#"
+                },
+                {
+                    id: 13,
+                    name: "Forgot password",
+                    link: "#"
+                },
+            ]
+        },
+        {
+            id: 3,
+            name: "Patients",
+            link: "",
+            subLinks: [
+                {
+                    id: 1,
+                    name: "Dashboard",
+                    link: "#"
+                },
+                {
+                    id: 2,
+                    name: "Profile",
+                    link: "#"
+                },
+                {
+                    id: 3,
+                    name: "Book Appointment",
+                    link: "#"
+                },
+                {
+                    id: 4,
+                    name: "Invoice",
+                    link: "#"
+                }
+            ]
+        },
+        {
+            id: 4,
+            name: "Pharmacy",
+            link: "",
+            subLinks: [
+                {
+                    id: 1,
+                    name: "Pharmacy",
+                    link: "#"
+                },
+                {
+                    id: 2,
+                    name: "Shop",
+                    link: "#"
+                },
+                {
+                    id: 3,
+                    name: "Medicine Detail",
+                    link: "#"
+                },
+                {
+                    id: 4,
+                    name: "Shop Cart",
+                    link: "#"
+                },
+                {
+                    id: 5,
+                    name: "Checkout",
+                    link: "#"
+                },
+                {
+                    id: 6,
+                    name: "Account",
+                    link: "#"
+                }
+            ]
+        },
+        {
+            id: 5,
+            name: "Admin",
+            link: "#"
+        }
+    ]
+
     return (
-        <div className="navbar bg-transparent text-white/[.7] fixed top-0 z-50 px-[10%]">
-            <div className="navbar-start">
-                <div className="dropdown">
-                    <label tabIndex={0} className="btn btn-ghost lg:hidden">
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-                    </label>
-                    <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
-                        <li><Link>Item 1 </Link></li>
-                        <li tabIndex={0}>
-                            <Link className="justify-between">
-                                Parent
-                                <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" /></svg>
-                            </Link>
-                            <ul className="p-2">
-                                <li><Link>Submenu 1</Link></li>
-                                <li><Link>Submenu 2</Link></li>
-                            </ul>
-                        </li>
-                        <li><Link>Item 3</Link></li>
-                    </ul>
-                </div>
-                <Link className="btn btn-ghost normal-case text-xl">daisyUI</Link>
-            </div>
-            <div className="navbar-center hidden lg:flex">
-                <ul className="menu menu-horizontal p-0">
-                    <li><Link>Item 1</Link></li>
-                    <li tabIndex={0}>
-                        <Link>
-                            Parent
-                            <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" /></svg>
-                        </Link>
-                        <ul className="p-2">
-                            <li><Link>Submenu 1</Link></li>
-                            <li><Link>Submenu 2</Link></li>
-                        </ul>
-                    </li>
-                    <li><Link>Item 3</Link></li>
-                </ul>
-            </div>
+        <div className={`navbar h-[74px] bg-white lg:bg-transparent text-black/70 lg:text-white/[.7] fixed top-0 z-50 px-[10%]  ${nav || "lg:bg-[#fff] lg:text-black/70"
+            } transform duration-500`}>
+            {/* nav start */}
+            <NavStart />
+            {/* nav center */}
+            <NavCenter links={links} />
             {/* nav end */}
-            <NavEnd />
+            <NavEnd openNav={openNav} setOpenNav={setOpenNav} />
+            <MobileNavLink openNav={openNav} links={links} />
         </div>
     );
 };
