@@ -1,15 +1,16 @@
-import React from 'react'
-import SectionHeader from '../components/SectionHeader'
-import SectionIntro from '../components/SectionIntro'
-import SectionSubHeader from '../components/SectionSubHeader'
+import React from 'react';
+import CollapseItems from '../components/homePageComponents/CollapseItems/CollapseItems';
+import SectionHeader from '../components/SectionHeader';
+import SectionIntro from '../components/SectionIntro';
+import SectionSubHeader from '../components/SectionSubHeader';
+import Header from './../components/Header/Header';
 
 
 const Homepage = () => {
   return (
     <React.Fragment>
-      <h1 className="text-3xl font-bold underline">
-      Hello world!
-      </h1>
+      <Header />
+      <CollapseItems />
       <SectionSubHeader />
       <SectionHeader />
       <SectionIntro />

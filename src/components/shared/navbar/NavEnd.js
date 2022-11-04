@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const NavEnd = () => {
     return (
@@ -9,18 +10,18 @@ const NavEnd = () => {
             <div className="dropdown dropdown-end">
                 <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
                     <div className="w-10 rounded-full">
-                        <img src="https://shreethemes.in/doctris/layouts/assets/images/doctors/01.jpg" />
+                        <img src="https://shreethemes.in/doctris/layouts/assets/images/doctors/01.jpg" alt='pic' />
                     </div>
                 </label>
                 <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
                     <li>
-                        <a className="justify-between">
+                        <Link className="justify-between">
                             Profile
                             <span className="badge">New</span>
-                        </a>
+                        </Link>
                     </li>
-                    <li><a>Settings</a></li>
-                    <li><a>Logout</a></li>
+                    <li><Link>Settings</Link></li>
+                    <li><Link>Logout</Link></li>
                 </ul>
             </div>
         </div>
