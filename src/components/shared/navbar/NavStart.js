@@ -22,7 +22,7 @@ const NavStart = () => {
                     <li><a>Item 3</a></li>
                 </ul>
             </div>
-            <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
+            <a className="btn btn-ghost normal-case text-xl">Logo</a>
         </div>
     );
 };

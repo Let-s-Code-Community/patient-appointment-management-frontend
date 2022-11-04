@@ -161,7 +161,7 @@ const NavCenter = () => {
                         {
                             link.subLinks &&
                             <ul className='absolute top-0  text-black/70  hidden group-hover:block text-xs font-bold '>
-                                <div className='mt-[74px] bg-white p-4 rounded-md space-y-4' >
+                                <div className='mt-[74px] bg-white p-4 rounded-md shadow-md space-y-4' >
 
                                     {
                                         link.subLinks.map(link =>
