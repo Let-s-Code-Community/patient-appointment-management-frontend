@@ -1,8 +1,18 @@
 import React from 'react'
+import SectionHeader from '../SectionHeader'
+import SectionIntro from '../SectionIntro'
+import SectionSubHeader from '../SectionSubHeader'
+import ServiceContainer from './ServiceContainer'
 
 const Services = () => {
   return (
-    <div>Services</div>
+    <section className='mt-4 w-4/6 mx-auto'>
+    <SectionSubHeader />
+    <SectionHeader />
+    <SectionIntro />
+    <ServiceContainer />
+    
+    </section>
   )
 }
 

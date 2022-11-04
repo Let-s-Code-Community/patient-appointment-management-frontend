@@ -1,18 +1,12 @@
 import React from 'react'
-import SectionHeader from '../components/SectionHeader'
-import SectionIntro from '../components/SectionIntro'
-import SectionSubHeader from '../components/SectionSubHeader'
+import Services from '../components/homePageComponents/Services'
 
 
 const Homepage = () => {
   return (
     <React.Fragment>
-      <h1 className="text-3xl font-bold underline">
-      Hello world!
-      </h1>
-      <SectionSubHeader />
-      <SectionHeader />
-      <SectionIntro />
+     
+      <Services />
     </React.Fragment>
   )
 }
