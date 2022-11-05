@@ -1,6 +1,6 @@
 import React from 'react';
-import { HiBars3 } from "react-icons/hi2"
-import { AiOutlineClose, AiOutlineDashboard, AiOutlineLogin, AiOutlineSetting } from "react-icons/ai"
+import { AiOutlineClose, AiOutlineDashboard, AiOutlineLogin, AiOutlineSetting } from "react-icons/ai";
+import { HiBars3 } from "react-icons/hi2";
 const NavEnd = ({ setOpenNav, openNav }) => {
     return (
         <div className="navbar-end">
@@ -13,7 +13,7 @@ const NavEnd = ({ setOpenNav, openNav }) => {
             <div className="dropdown dropdown-end">
                 <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
                     <div className="w-10 rounded-full">
-                        <img src="https://shreethemes.in/doctris/layouts/assets/images/doctors/01.jpg" />
+                        <img src="https://shreethemes.in/doctris/layouts/assets/images/doctors/01.jpg" alt=''/>
                     </div>
                 </label>
                 <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-md w-52">
@@ -21,7 +21,7 @@ const NavEnd = ({ setOpenNav, openNav }) => {
                     <div className='flex items-center gap-3'>
                         <div className="avatar">
                             <div className="w-11 rounded-full">
-                                <img src="https://shreethemes.in/doctris/layouts/assets/images/doctors/01.jpg" />
+                                <img src="https://shreethemes.in/doctris/layouts/assets/images/doctors/01.jpg" alt=''/>
                             </div>
                         </div>
                         <div className='uppercase font-bold'>
