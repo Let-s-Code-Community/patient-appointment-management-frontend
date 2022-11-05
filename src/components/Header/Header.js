@@ -51,15 +51,15 @@ const Header = () => {
                                         <i class="bi bi-clock-fill text-4xl text-accent"></i>
                                         <h4 className='mt-3 md:text-xl text-lg font-bold'>Opening Hours</h4>
                                         <ul className='list-none  p-4'>
-                                            <li className='flex space-x-36'>
+                                            <li className='flex lg:space-x-36 md:space-x-36 xsm:space-x-5 space-x-10'>
                                                 <p className=''>Monday</p>
                                                 <p className='whitespace-nowrap text-blue-600/100'>8:00-20:00</p>
                                             </li>
-                                            <li className='flex space-x-36 '>
+                                            <li className='flex lg:space-x-36 md:space-x-36 space-x-5 '>
                                                 <p className=''>Saturday</p>
                                                 <p className='whitespace-nowrap text-blue-600/100'>8:00-20:00</p>
                                             </li>
-                                            <li className='flex space-x-36 '>
+                                            <li className='flex lg:space-x-36 md:space-x-36 space-x-5 '>
                                                 <p className=''>Sunday</p>
                                                 <p className='whitespace-nowrap text-blue-600/100'>8:00-20:00</p>
                                             </li>
