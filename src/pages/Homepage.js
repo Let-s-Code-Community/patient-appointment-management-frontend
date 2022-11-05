@@ -1,4 +1,5 @@
 import React from 'react';
+import Card from '../components/Cards/Card';
 import Services from '../components/homePageComponents/Services';
 import Header from './../components/Header/Header';
 import CollapseItems from './../components/homePageComponents/CollapseItems/CollapseItems';
@@ -12,7 +13,9 @@ const Homepage = () => {
     <Header />
     <CollapseItems />     
       <Services />
+      <Card></Card>
     </React.Fragment>
+    
   )
 }
 
