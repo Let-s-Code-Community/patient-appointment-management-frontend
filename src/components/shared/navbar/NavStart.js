@@ -1,9 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const NavStart = () => {
     return (
         <div className="navbar-start">
-            <a className="btn btn-ghost normal-case text-xl">Logo</a>
+            <Link to="" className="btn btn-ghost normal-case text-xl">Logo</Link>
         </div>
     );
 };

@@ -9,7 +9,7 @@ const NavCenter = ({ links }) => {
             <ul className="flex space-x-9 uppercase">
                 {
                     links.map(link => <li key={link.id} className='group cursor-pointer hover:text-accent flex items-center space-x-2'>
-                        <a className='text-sm font-bold '>{link.name}</a>
+                        <Link to='/' className='text-sm font-bold '>{link.name}</Link>
                         <FaAngleDown className={link.subLinks ? 'block group-hover:rotate-180 duration-300' : 'hidden'} />
 
                         {

@@ -1,21 +1,22 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
-import './Header.css'
+import './Header.css';
 
 const Header = () => {
     return (
         <div>
             <div className='header '>
-                <div className='container'>
-                    <div className='row container mx-auto'>
-                        <div className='col-md-12 col-12 col-lg-12 '>
+                <div className='container mx-auto'>
+                    <div className='p-8'>
+                        <div className='container mx-auto px-8'>
                             <div className='heading-title' >
-                                <img src="https://shreethemes.in/doctris/layouts/assets/images/logo-icon.png" width={50} alt="" />
-                                <div className=' mt-3'>
-                                    <h1 className='text-6xl text-white font-bold mb-4'>Meet The <br /> Best Doctor</h1>
-                                    <p className='mt-5 text-gray-300 mb-0'>Great doctor if you need your family member to <br /> get effective immediate assistance, emergency treatment or a simple consultation.</p>
+                            <i class="bi bi-heart-pulse-fill text-6xl text-accent"></i>
+                                {/* <img  src="https://shreethemes.in/doctris/layouts/assets/images/logo-icon.png" width={50} alt="" /> */}
+                                <div className=' mt-8'>
+                                    <h1 className='md:text-6xl text-3xl text-white font-bold mb-12'>Meet The <br />  Best Doctor</h1>
+                                    <p className='mt-5 text-gray-300 mb-10'>Great doctor if you need your family member to <br /> get effective immediate assistance, emergency treatment or a simple consultation.</p>
                                     <div className='mt-4 pt-2'>
-                                        <a href="#" className='btn btn-primary'>Make Appointment</a>
+                                        <a href="#" className='btn btn-accent text-white'>Make Appointment</a>
                                     </div>
                                 </div>
                             </div>
@@ -23,34 +24,49 @@ const Header = () => {
                     </div>
                 </div>
             </div>
-            <div className='py-5 px-0 relative border'>
-                <div className='container'>
-                    <div className='row'>
-                        <div className='col-xl-10 col-12 col-md-10 col-lg-10 mx-auto' >
-                            <div className='row container mx-auto  relative -mt-48'>
-                                <div className='col-md-4 bg-neutral-100 rounded-tl-lg rounded-bl-lg'>
-                                    <div className=' p-4 '>
-                                        <i class="bi bi-heart-pulse-fill text-4xl text-primary"></i>
-                                        <h4 className='mt-3 text-xl font-bold'>Emergency Cases</h4>
+            <div className='py-24 md:p-24 relative '>
+                <div className='container mx-auto'>
+                    <div className=''>
+                        <div className='container mx-auto px-4 ' >
+                            <div className='lg:flex justify-center container mx-auto px-4  relative -mt-52 '>
+                                <div className='lg:w-96 bg-slate-100  lg:rounded-tl-lg lg:rounded-bl-lg lg:rounded-tr-none  rounded-tl-lg rounded-tr-lg'>
+                                    <div className='p-6'>
+                                        <i class="bi bi-heart-pulse-fill text-4xl text-accent"></i>
+                                        <h4 className='mt-3 md:text-xl text-lg font-bold'>Emergency Cases</h4>
                                         <p className='text-muted mt-3 mb-3'>This is required when, for example, the is not yet available. Dummy text is also known as 'fill text'.</p>
-                                        <a href="#" className='text-primary'>Read more  <i class="bi bi-arrow-right-short text-lg "></i></a>
+                                        <a href="#" className='text-blue-600/100'>Read more  <i class="bi bi-arrow-right-short text-lg "></i></a>
                                     </div>
                                 </div>
-                                <div className='col-md-4 px-0'>
-                                    <div className=' p-4 bg-white'>
-                                        <i class="bi bi-calendar2-plus-fill text-4xl text-primary"></i>
-                                        <h4 className='mt-3 text-xl font-bold'>Doctor Timetable</h4>
-                                        <p className='text-muted mt-3 mb-3'>This is required when, for example, the is not yet available. Dummy text is also known as 'fill text'.</p>
-                                        <a href="#" className='text-primary'>Read more  <i class="bi bi-arrow-right-short text-lg "></i></a>
+                                <div className='lg:w-96 px-0 bg-white'>
+                                    <div className='p-6'>
+                                        <i class="bi bi-calendar2-plus-fill text-4xl text-accent"></i>
+                                        <h4 className='mt-3 md:text-xl text-lg font-bold'>Doctor Timetable</h4>
+                                        <p className='text-muted mt-3 mb-3 '>This is required when, for example, the is not yet available. Dummy text is also known as 'fill text'.</p>
+                                        <a href="#" className='text-blue-600/100'>Read more  <i class="bi bi-arrow-right-short text-lg "></i></a>
 
                                     </div>
                                 </div>
-                                <div className='col-md-4  bg-neutral-100 rounded-tr-lg rounded-br-lg'>
-                                    <div className='p-4'>
-                                        <i class="bi bi-clock-fill text-4xl text-primary"></i>
-                                        <h4 className='mt-3 text-xl font-bold'>Opening Hours</h4>
-                                        <p className='text-muted mt-3 mb-3'>This is required when, for example, the is not yet available. Dummy text is also known as 'fill text'.</p>
-                                        <a href="#" className='text-primary'>Read more  <i class="bi bi-arrow-right-short text-lg "></i></a>
+                                <div className='lg:w-96 bg-slate-100 lg:rounded-tr-lg lg:rounded-br-lg lg:rounded-bl-none rounded-bl-lg rounded-br-lg'>
+                                    <div className=' p-6'>
+                                        <i class="bi bi-clock-fill text-4xl text-accent"></i>
+                                        <h4 className='mt-3 md:text-xl text-lg font-bold'>Opening Hours</h4>
+                                        <ul className='list-none  p-4'>
+                                            <li className='flex lg:space-x-36 md:space-x-36 xsm:space-x-5 space-x-10'>
+                                                <p className=''>Monday</p>
+                                                <p className='whitespace-nowrap text-blue-600/100'>8:00-20:00</p>
+                                            </li>
+                                            <li className='flex lg:space-x-36 md:space-x-36 space-x-5 '>
+                                                <p className=''>Saturday</p>
+                                                <p className='whitespace-nowrap text-blue-600/100'>8:00-20:00</p>
+                                            </li>
+                                            <li className='flex lg:space-x-36 md:space-x-36 space-x-5 '>
+                                                <p className=''>Sunday</p>
+                                                <p className='whitespace-nowrap text-blue-600/100'>8:00-20:00</p>
+                                            </li>
+                                            
+                                           
+                                        </ul>
+                                        <a href="#" className='text-blue-600/100'>Read more  <i class="bi bi-arrow-right-short text-lg "></i></a>
 
                                     </div>
                                 </div>
