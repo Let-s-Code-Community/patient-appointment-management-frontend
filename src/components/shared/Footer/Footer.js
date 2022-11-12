@@ -1,5 +1,4 @@
 import React from 'react';
-import './Footer.css';
 import FooterDetail from './FooterDetail';
 
 const Footer = () => {
@@ -38,11 +37,11 @@ const Footer = () => {
         <footer className="w-full bg-accent px-8 py-3 sm:pr-6">
             <div className="pt-5">
                 <div className="flex justify-between md:py-5 ">
-                    <FooterDetail key={1} menuTitle={" . "} menuItems={noNamed} /> 
+                    <FooterDetail key={1} menuTitle="Services" menuItems={noNamed} /> 
                     <FooterDetail key={2} menuTitle="Services" menuItems={services} />
-                    <FooterDetail key={3} menuTitle="Oral Health" menuItems={oralHealth} />
+                    <FooterDetail key={3} menuTitle="Services 2" menuItems={oralHealth} />
                     <FooterDetail key={4} menuTitle="Our Address" menuItems={ourAddress}>
-                        <ul className="social-media list-inline">
+                        <ul className="flex justify-between pl-0 pr-6">
                             <li className="list-inline-item"><a href="!#">dgf</a></li>
                             <li className="list-inline-item"><a href="!#">fhg</a></li>
                             <li className="list-inline-item"><a href="!#">fhh</a></li>
